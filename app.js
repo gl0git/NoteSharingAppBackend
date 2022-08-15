@@ -20,7 +20,7 @@ var User = require('./models/userModel')
 var Course = require('./models/courseModel')
 const { userInfo } = require('os');
 
-const mongoDB = 'mongodb+srv://MongoDefault123:mongoguy123@cluster0.psbdm.mongodb.net/notesharing?retryWrites=true&w=majority'
+const mongoDB = process.env.CONNECTION_URI
 mongoose.connect(mongoDB, {useUnifiedTopology: true, useNewUrlParser: true})
 const db = mongoose.connection;
 db.on("error", console.error.bind(console, "mongo connection error"));
