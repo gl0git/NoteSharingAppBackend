@@ -1,5 +1,7 @@
 A backend for NoteShare, a note-sharing app for university students. 
 
-Made using Node.js and Express.js, and connected to a MongoDB database. 
+Made using Node.js and Express.js, and a MongoDB database. 
 
 The frontend is deployed @ https://gl0git.github.io/NoteSharingAppFrontend/
+
+Some things to be added: reviewing notes (upvoting/downvoting), managing lost user passwords.
